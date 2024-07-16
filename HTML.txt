@@ -1,0 +1,106 @@
+<html>
+<body>
+<head>
+<h1> to <h6>
+<p>
+<br>---->Enter break
+<hr>----> horizantal rule
+<style>
+<div>
+<title>
+
+<a> ---->hyperlink
+<a href="https://www.w3schools.com">Visit W3Schools</a>
+
+<img>-->inserting image
+<img src="img_girl.jpg">           <img src="img_girl.jpg" width="500" height="600">      <img src="img_typo.jpg" alt="Girl with a jacket">
+
+<b>----->Bold
+
+<pre>------> defines preformatted text
+<pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</pre>
+
+style:
+<tagname style="property:value;">
+
+Formatting elements:
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+
+
+<blockquote>------> defines a section that is quoted from another source.
+<q>-----> Quotes
+
+<abbr>---------> abbrevation
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<Address>--->for address
+<cite>----->defines the title of a work
+
+<bdo>----->Bi-Directional Override.
+<bdo dir="rtl">This text will be written from right to left</bdo>
+
+
+
+HTML-CSS:
+
+1> inline
+<h1 style="color:blue;">A Blue Heading</h1>
+<p style="color:red;">A red paragraph.</p>
+
+
+2> internal---> using <style> tag.
+<style>
+.body {background-color: powderblue;}
+.h1   {color: blue;}
+.p    {color: red;}
+</style>
+
+
+3> external---->Linking both HTML and CSS
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+Bookmark:
+<a href="#C4">Jump to Chapter 4</a>
+<p><a href="#C4">Jump to Chapter 4</a></p>
+
+
+<button onclick="document.location='https://en.wikipedia.org/wiki/Virat_Kohli'">See more</button>
+
+
+
+background-color:black;
+text-align:center;
+color:blue;
+font-family: "Times New Roman", Times, serif;
+font-style: italic;
+font-size: 35px;
+font-weight: bold;
+background-image:url("https://4kwallpapers.com/images/wallpapers/virat-kohli-black-1920x1080-16371.jpeg");
+background-size: cover;
+weight: 100vh;
+width: 100vw;
+text-decoration: underline;
+border-radius: 20px;
+border-width: 5px;
+border-image-width: 20px;
+padding: 20px;
