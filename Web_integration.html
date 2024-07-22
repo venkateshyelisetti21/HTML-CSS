@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <style>
+            .bg-containr 
+            {
+                background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/ocean.jpg");
+                height: 100vh;
+                background-size: cover;
+            }
+            .tourism-card 
+            {
+                text-align: center;
+                background-color: white;
+                padding: 5px;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+            }
+            .main-heading 
+            {
+                font-family: "Roboto";
+            }
+            .paragraph 
+            {
+                font-family: "Roboto";
+            }
+            .button 
+            {
+                height: 36px;
+                width: 138px;
+                background-color: #25b1cc;
+                color: white;
+                border-radius: 20px;
+                border-width: 0px;
+            }
+
+
+            .bg-container
+            {
+                background-image: url("https://t3.ftcdn.net/jpg/07/13/86/76/360_F_713867699_cGkRJhDVkGJqIr8ywwNO0mynRZnBHSRT.webp");
+                height: 135vh;
+                background-size: cover;
+            }
+            .bg-container-heading
+            {
+                text-align:center;
+                font-family: 'Times New Roman', 'Times, serif';
+                font-size: 50px;
+                text-decoration: underline;
+                color: Black;
+                padding: 15px;
+            }
+            .fav-card-container
+            {
+                background-color: rgba(255,255,255,0.5);
+                border-radius: 8px ;
+                padding: 16px;
+                margin: 15px;
+            }
+            .fav-card-container-heading
+            {
+                color:brown;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 30px;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+            .fav-card-container-description
+            {
+                font-family: Arial, Helvetica, sans-serif;
+                font-style: italic;
+                font-size: 15px;
+                color:black;
+            }
+            .fav-card-container-img
+            {
+                width:80px;
+                height:120px;
+            }
+            .button-back 
+            {
+                height: 36px;
+                width: 138px;
+                background-color: black;
+                color: white;
+                border-radius: 20px;
+                border-width: 0px;
+                margin: 15px;
+            }
+
+
+            .bg
+            {
+                background-image: url("https://media.istockphoto.com/id/927446996/photo/closeup-of-raindrops-on-window-glass.webp?b=1&s=170667a&w=0&k=20&c=pnHtHfIG6M6m42Buy7a7GwDo_OChRmMFx7EkbUhTqlg=");
+                height: 200vh;
+                background-size: cover;
+            }
+            .bg-heading
+            {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 40px;
+                color: white;
+                padding: 20px;
+                
+            }
+            .detailed-view-card-container
+            {
+                background-color: rgba(255,255,255,0.5);
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;   
+                padding: 25px;
+                text-align: center;
+                margin-left:100px;
+                margin-right: 100px;
+            }
+            .down-container
+            {
+                text-align: center;
+                padding: 15px;
+            }
+            .down-container-heading
+            {
+                color: black;
+                font-weight: bold;
+                font-family: "Roberto";
+                font-size: 30px;
+                text-align: center;
+            }
+            .down-container-description
+            {
+                color: black;
+                font-family: cursive;
+                font-style: italic;
+                font-size: 15px;
+                text-align: center;
+            }
+        </style>
+            <div id="sectionHomepage">
+                <div class="bg-containr">
+                    <div class="tourism-card">
+                        <h1 class="main-heading">Tourism</h1>
+                        <p class="paragraph">Plan your trip.</p>
+                        <button class="button" class="btn btn-primary" onclick="display('sectionMainpage')">Get Started</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="sectionMainpage">
+                <div class="bg-container">
+                    <div class="bg-container-heading"><b>TOURISM</b></div>
+                    <div class="fav-card-container d-flex flex-row" class="btn btn-primary" onclick="display('sectiondetailedviewTaj')">
+                        <div>
+                            <h1 class="fav-card-container-heading">Taj Mahal</h1>
+                            <p class="fav-card-container-description">
+                                The Taj Mahal (/ˌtɑːdʒ məˈhɑːl, ˌtɑːʒ-/; lit. 'Crown of the Palace') is an ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India. It was commissioned in 1631 by the fifth Mughal emperor, Shah Jahan (r. 1628–1658) to house the tomb of his beloved wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/250px-Taj_Mahal_%28Edited%29.jpeg" class="fav-card-container-img"/>
+                        </div>
+                    </div>
+                    <div class="fav-card-container d-flex flex-row" class="btn btn-primary" onclick="display('sectiondetailedviewGoldenTemple')">
+                        <div>
+                            <h1 class="fav-card-container-heading">Golden Temple</h1>
+                            <p class="fav-card-container-description">
+                                The Golden Temple (also known as the Harmandir Sahib (lit. 'House of God', Punjabi pronunciation: [ɦəɾᵊmən̪d̪əɾᵊ saːɦ(ɪ)bᵊ])), or the Darbār Sahib, (lit. ''exalted court'', [d̪əɾᵊbaːɾᵊ saːɦ(ɪ)bᵊ] or Suvaran Mandir[2]) is a gurdwara located in the city of Amritsar, Punjab, India.[3][4] It is the pre-eminent spiritual site of Sikhism.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/220px-The_Golden_Temple_of_Amrithsar_7.jpg" class="fav-card-container-img"/>
+                        </div>
+                    </div>
+                    <div class="fav-card-container d-flex flex-row" class="btn btn-primary" onclick="display('sectiondetailedviewMysorePalace')">
+                        <div>
+                            <h1 class="fav-card-container-heading">Mysore Palace</h1>
+                            <p class="fav-card-container-description">
+                                Mysore Palace, also known as Amba Vilas Palace, is a historical palace and a royal residence. It is located in Mysore, Karnataka, India. It used to be the official residence of the Wadiyar dynasty and the seat of the Kingdom of Mysore.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mysore_Palace_Morning.jpg/800px-Mysore_Palace_Morning.jpg" class="fav-card-container-img"/>
+                        </div>
+                    </div>
+                    <div class="fav-card-container d-flex flex-row" class="btn btn-primary" onclick="display('sectiondetailedviewVaranasiTemple')">
+                        <div>
+                            <h1 class="fav-card-container-heading">Varanasi Temple</h1>
+                            <p class="fav-card-container-description">
+                                Kashi Vishwanath Temple is a Hindu temple dedicated to Shiva. It is located in Vishwanath Gali, in Varanasi, Uttar Pradesh, India. The temple is a Hindu pilgrimage site and is one of the twelve Jyotirlinga shrines.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Kashi_Vishwanath.jpg/220px-Kashi_Vishwanath.jpg" class="fav-card-container-img"/>
+                        </div>
+                    </div>
+                    <button class="button-back" class="btn btn-primary" onclick="display('sectionHomepage')">Back</button>
+                </div>
+            </div>
+
+
+
+            <div id="sectiondetailedviewTaj">
+                <div class="bg">
+                    <h1 class="bg-heading">Detailed view</h1>
+                    <div class="detailed-view-card-container h-flex flex-row justify-content-center">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c1-img.png" class="d-block w-100" alt="...">
+                        <div class="down-container">
+                            <h1 class="down-container-heading">TajMahal</h1>
+                            <p class="down-container-description">The Taj Mahal is considered to be the greatest architectural achievement in the whole range of Indo-Islamic architecture. Its recognised architectonic beauty has a rhythmic combination of solids and voids, concave and convex and light shadow; such as arches and domes further increases the aesthetic aspect. Not a piece of architecture, as other buildings are, but the proud passions of an emperor’s love wrought in living stones.</p>
+                            <button class="button-back" class="btn btn-primary" onclick="display('sectionMainpage')">Back</button>
+                        </div>    
+                    </div>
+        
+                </div>
+            </div>
+
+
+
+            <div id="sectiondetailedviewGoldenTemple">
+                <div class="bg">
+                    <h1 class="bg-heading">Detailed view</h1>
+                    <div class="detailed-view-card-container h-flex flex-row justify-content-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaE6daDAmw727-z9ciqlfUazisJb7ds8aFlg&s" class="d-block w-100" alt="...">      
+                        <div class="down-container">
+                            <h1 class="down-container-heading">Golden Temple</h1>
+                            <p class="down-container-description">The man-made pool on the site of the temple was completed by the fourth Sikh Guru, Guru Ram Das, in 1577.[6][7] In 1604, Guru Arjan, the fifth Sikh Guru, placed a copy of the Adi Granth in the Golden Temple and was a prominent figure in its development.[3][8] The gurdwara was repeatedly rebuilt by the Sikhs after it became a target of persecution and was destroyed several times by the Mughal and invading Afghan armies.</p>
+                            <button class="button-back" class="btn btn-primary" onclick="display('sectionMainpage')">Back</button>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="sectiondetailedviewMysorePalace">
+                <div class="bg">
+                    <h1 class="bg-heading">Detailed view</h1>
+                    <div class="detailed-view-card-container h-flex flex-row justify-content-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLSdil0VNNaSqaNGZoXZphdrgU-bLhUiLClA&s" class="d-block w-100" alt="...">      
+                        <div class="down-container">
+                            <h1 class="down-container-heading">Mysore Palace</h1>
+                            <p class="down-container-description">The land on which the palace now stands was originally known as mysuru (literally, "citadel"). The first palace inside the Old Fort was built in the 14th century, which was set ablaze and reconstructed multiple times. The Old Fort was built of wood and thus easily caught fire, while the current fort was built of stone, bricks and wood. The current structure was constructed between 1897 and 1912, after the Old Palace burnt down, the current structure is also known as the New Fort.</p>
+                            <button class="button-back" class="btn btn-primary" onclick="display('sectionMainpage')">Back</button>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="sectiondetailedviewVaranasiTemple">
+                <div class="bg">
+                    <h1 class="bg-heading">Detailed view</h1>
+                    <div class="detailed-view-card-container h-flex flex-row justify-content-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIvDsJVI5cPWRwGW20XR-wQfGhQQqj3KhEWA&s" class="d-block w-100" alt="...">      
+                        <div class="down-container">
+                            <h1 class="down-container-heading">Varanasi Temple</h1>
+                            <p class="down-container-description">It is believed that Varanasi is the first Jyotirlinga to manifest itself.[8] According to the legend, it was at this place that Shiva (the Hindu god of destruction) manifested as an infinite column of light (Jyotirlinga) in front of Brahma (the Hindu god of creation) and Vishnu (the Hindu god of preservation) when they had an argument about their supremacy.</p>
+                            <button class="button-back" class="btn btn-primary" onclick="display('sectionMainpage')">Back</button>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+
+
+        <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    </body>
+</html>
